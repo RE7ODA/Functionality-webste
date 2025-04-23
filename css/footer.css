@@ -1,6 +1,6 @@
 .footer{
     width: 100%;
-    height: 400px;
+    height: 350px;
     background-color: #141313;
     color: #fff;
     padding: 10px;
@@ -46,7 +46,6 @@
 .social-media a{
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
     font-weight: bold;
     font-size: 25px;
 }
@@ -62,4 +61,43 @@
 }
 .social-list li{
     list-style: none;
+}
+@media screen and (max-width: 768px) {
+    .footer{
+        width: 100%;
+    }
+    .footer h1{
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 20px;
+        margin-top: 45px;
+    }
+    .pages-list a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .Contact-list{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+    }
+    .Contact-list h2{
+        font-size: 13px;
+        font-weight: 200;
+    }
+    .pages-list a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .social-media a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+        font-weight: bold;
+    }
 }

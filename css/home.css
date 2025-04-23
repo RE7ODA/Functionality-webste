@@ -13,7 +13,7 @@ body{
     height: 500px;
 }
 .content{
-    margin: 40px 0 40px 0;
+    margin: 30px 0 30px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -41,16 +41,16 @@ body{
     justify-content: space-evenly;
     align-items: center;
     background-color: #E7D3D4;
-    height: 500px;
+    height: 400px;
     margin: 40px 0 40px 0;
 }
 .content-2 h1{
-    font-size: 50px;
+    font-size: 40px;
     color: #000;
 }
 .W-list{
     width: 40%;
-    font-size: 35px;
+    font-size: 27px;
     list-style: none;
     font-weight: bold;
     line-height: 1.6em;
@@ -59,7 +59,7 @@ body{
 .content-2 li{
     background-color: #c9b3b4;
     margin: 15px;
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 20px;
     text-align: center;
     color: #000;
@@ -67,4 +67,66 @@ body{
 .content-2 li:hover{
     transform: scale(1.04);
     transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+    .banner{
+        background: url('../images/Your\ most\ trusted\ legal\ firm\ sin.jpg') no-repeat center / 100% 100%;
+        height: 300px;
+    }
+    .content{
+        margin: 30px 0 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .content img{
+        width: 95%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .content img:hover{
+        transform: scale(1.04);
+        transition: 0.3s;
+    }
+    .content p{
+        width: 95%;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.6em;
+        text-align: justify;
+    }
+    .content-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #E7D3D4;
+        height: 300px;
+        margin: 40px 0 40px 0;
+        width: 100%;
+    }
+    .content-2 h1{
+        font-size: 25px;
+        color: #000;
+        padding: 5px;
+    }
+    .W-list{
+        width: 95%;
+        font-size: 15px;
+        list-style: none;
+        font-weight: bold;
+        line-height: 1.6em;
+        text-align: justify;
+    }
+    .content-2 li{
+        background-color: #c9b3b4;
+        margin: 15px;
+        padding: 5px 15px;
+        border-radius: 20px;
+        text-align: center;
+        color: #000;
+    }
+    
 }
