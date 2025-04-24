@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     <div class="container">
@@ -24,7 +25,7 @@
                 <ul id="nav-list" class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="helpGudie.html">help quide</a></li>
+                    <li><a href="helpGudie.html">Help Guide</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
                 <ul class="icon-list">
@@ -40,16 +41,16 @@
                 <div class="content">
                 <h1>Register</h1>
                 <label>User Name</label>
-                <input type="text">
+                <input name="usersName" id="usersName" type="text" required>
                 <label>Email</label>
-                <input type="email">
+                <input name="email" id="email" type="email" required>
                 <label>Password</label>
-                <input type="password">
-                <select>
+                <input name="password" id="password" type="password" required minlength="6">
+                <select name="role" id="role">
                     <option value="client">client</option>
                     <option value="lawyer">lawyer</option>
                 </select>
-                <button type="submit">Register</button>
+                <button onclick="register()" id="registerBtn" type="button">Register</button>
                 <p>Already have an account? <a href="login.html">Login</a></p>
             </div>
             </div>
@@ -78,5 +79,7 @@
         </div>
     </div>
     <script src="./js/navbar.js"></script>
+    <script src="./js/Register.Api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>

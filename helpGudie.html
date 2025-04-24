@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Help Gudie</title>
     <link rel="stylesheet" href="css/nevbar.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/helpGudie.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -13,6 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -25,55 +27,54 @@
                 <ul id="nav-list" class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="helpGudie.html">help quide</a></li>
+                    <li><a href="helpGudie.html">Help Guide</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
                 <ul class="icon-list">
                     <div class="search-bar">
                         <input type="text" placeholder="Search...">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <a href="login.html"><button class="login">Login</button></a>
                 </ul>
             </div>
         </header>
         <div class="main">
-            <div class="card">
-                <img src="./images/9b74384ed.jpg" >
-                <div class="content">
-                <h1>Login</h1>
-                <label>Email</label>
-                <input id="email" type="email" required>
-                <label>Password</label>
-                <input  id="password" type="password" minlength="6" required>
-                <button onclick="login()" type="button">Login</button>
-                <p> Don't have an account?<a href="register.html">Register</a></p>
+            <div class="create-post">
+                <h1>Create a New Post</h1>
+                <input id="title" placeholder="Title" />
+                <textarea id="description" placeholder="Description"></textarea>
+                <input id="category" placeholder="Category" />
+                <button onclick="createPost()">Post</button>
             </div>
-            </div>
+            <h2>All Posts</h2>
+            <div id="posts"></div>
         </div>
         <div class="footer">
             <ul class="Contact-list">
-            <h1>Contact Details</h1>
-            <h2>7890-456 6643</h2>
-            <h2>advocatelounge@gmail.com</h2>
+                <h1>Contact Details</h1>
+                <h2>7890-456 6643</h2>
+                <h2>advocatelounge@gmail.com</h2>
             </ul>
             <ul class="pages-list">
                 <h1>Pages</h1>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="helpGudie.html">Help Guide</a></li>
+                <li><a href="helpGudie.html">help quide</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
             <ul class="social-media">
                 <h1>Social</h1>
                 <ul class="social-list">
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
                 </ul>
             </ul>
         </div>
     </div>
     <script src="./js/navbar.js"></script>
-    <script src="./js/login.js"></script>
+    <script src="./js/helpGudie.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
+
 </html>
