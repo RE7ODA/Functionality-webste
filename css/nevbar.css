@@ -56,15 +56,11 @@
     height: 40px;
     width: 40px;
 }
+.search-bar .login{
+    width: 70px; ;
+}
 .search-bar button:hover{
     background-color: #d8b2b4;
-}
-.fa-globe{
-    font-size: 30px;
-    color: #000;
-    margin-right: 20px;
-    margin-left: 5px;
-    cursor: pointer;
 }
 .fa-globe:hover{
     color: #e9c9cb;
