@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>About Us</title>
 </head>
 
@@ -33,7 +34,8 @@
                     <div class="search-bar">
                         <input type="text" placeholder="Search...">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <a href="login.html"><button class="login" >Login</button></a>
+                        <a href="login.html"> <button id="loginBtn" onclick="showLoginForm()">Login</button></a>
+                        <button id="logoutBtn" onclick="logout()" style="display: none;">Logout</button>
                 </ul>
             </div>
         </header>
@@ -176,5 +178,8 @@
         </div>
     </div>
     <script src="./js/navbar.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>

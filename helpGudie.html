@@ -34,7 +34,8 @@
                     <div class="search-bar">
                         <input type="text" placeholder="Search...">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        <a href="login.html"><button class="login">Login</button></a>
+                        <a href="login.html"> <button id="loginBtn" onclick="showLoginForm()">Login</button></a>
+                        <button id="logoutBtn" onclick="logout()" style="display: none;">Logout</button>
                 </ul>
             </div>
         </header>
@@ -74,6 +75,8 @@
     </div>
     <script src="./js/navbar.js"></script>
     <script src="./js/helpGudie.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/logout.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 

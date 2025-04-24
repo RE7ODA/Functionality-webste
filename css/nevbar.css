@@ -56,7 +56,18 @@
     height: 40px;
     width: 40px;
 }
-.search-bar .login{
+.search-bar #loginBtn{
+    width: 70px; ;
+}
+#logoutBtn{
+    background-color: #e9c9cb;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    height: 40px;
     width: 70px; ;
 }
 .search-bar button:hover{
