@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nevbar.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="nevbar">
+                <div class="logo-container">
+                    <img src="./images/IMG_3695.jpg" class="logo">
+                    <i id="nav-toggle" class="fa-solid fa-bars"></i>
+                    <i id="nav-toggle-close" class="fa-solid fa-bars"></i>
+                </div>
+                <ul id="nav-list" class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="helpGudie.html">help quide</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <ul class="icon-list">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <i class="fa-solid fa-globe"></i>
+                </ul>
+            </div>
+        </header>
+        <div class="main">
+            <div class="banner"></div>
+            <div class="content">
+                <h1>WHO WE ARE</h1>
+                <p>Advocate lounge lawyers and atorneys help their clients around the world to solve any legal issue a company or a busines person may come across with. Each case gets ful dedication from the attorneys side who use al their god sense,
+                     experienceand knowledge to deal with dients difficulties</p>
+            </div>
+            <div class="content-2">
+                <div class="left">
+                    <img src="./images/discussion_15552370.png">
+                    <h4>Request consult</h4>
+                    <button>Book A Comsult</button>
+                </div>
+                <div class="right">
+                    <img src="./images/report_5716880.png">
+                    <h4>Investigetion</h4>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slides" id="slides">
+                  <div class="card">
+                    <div class="slide">
+                      <img src="./images/544ed2d1f0343e690d4bb6cde7ba27d8.jpg" alt="">
+                      <h2>Liam Carter</h2>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="slide">
+                      <img src="./images/9b74384edf1e6ad8195f7baf76bd9ccf.jpg" alt="">
+                      <h2>Ethan Mitchell</h2>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="slide">
+                      <img src="./images/ac26cea83dde1694411cef8133bd1389.jpg" alt="">
+                      <h2>Noah Brooks</h2>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="slide">
+                      <img src="./images/images.jpg" alt="">
+                      <h2>Lucas Bennett</h2>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="controls">
+                  <button onclick="prevSlide()">⟨</button>
+                  <button onclick="nextSlide()">⟩</button>
+                </div>
+              </div>
+              <div class="dots" id="dots"></div>
+              
+              <script>
+                const slides = document.getElementById('slides');
+                const cards = document.querySelectorAll('.card');
+                const dotsContainer = document.getElementById('dots');
+                let index = 0;
+              
+                function updateSlider() {
+                  slides.style.transform = `translateX(-${index * 100}%)`;
+                  [...dotsContainer.children].forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                  });
+                }
+              
+                function nextSlide() {
+                  index = (index + 1) % cards.length;
+                  updateSlider();
+                }
+              
+                function prevSlide() {
+                  index = (index - 1 + cards.length) % cards.length;
+                  updateSlider();
+                }
+              
+                // Create dots
+                for (let i = 0; i < cards.length; i++) {
+                  const dot = document.createElement('span');
+                  dot.classList.add('dot');
+                  if (i === 0) dot.classList.add('active');
+                  dot.addEventListener('click', () => {
+                    index = i;
+                    updateSlider();
+                  });
+                  dotsContainer.appendChild(dot);
+                }
+              
+                // Auto Slide
+                setInterval(nextSlide, 5000);
+              </script>
+              
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="Contact-list">
+            <h1>Contact Details</h1>
+            <h2>7890-456 6643</h2>
+            <h2>advocatelounge@gmail.com</h2>
+            </ul>
+            <ul class="pages-list">
+                <h1>Pages</h1>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="helpGudie.html">help quide</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <ul class="social-media">
+                <h1>Social</h1>
+                <ul class="social-list">
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/navbar.js"></script>
+</body>
+</html>
