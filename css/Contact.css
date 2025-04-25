@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 0;
+  width: 100%;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  box-shadow:  1px 5px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.card img{
+  width: 70%;
+  height: 550px;
+  border-radius: 15px 0  0 15px;
+}
+.card .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 550px;
+  padding: 15px;
+  background-color: #fff;
+  height: 550px;
+  border-radius: 0 15px 15px 0;
+}
+.card .content h1{
+ text-align: center;
+ margin: 10px 0 20px 0;
+ color: #000;
+}
+.card .content .form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  height: 200px;
+}
+.card .content .form input{
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 25px;
+}
+.card .content .form input:focus{
+  border-bottom: 1px solid #333;
+}
+.card .content .form label{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.card .content h2{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.card .content .social-medias{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 30px;
+  gap: 20px;
+}
+.card .content .social-medias a{
+  text-decoration: none;
+  color: #333;
+}
+.social-medias li{
+  list-style: none;
+}
+.card .content .social-medias a:hover{
+  color: #E7D3D4;
+}
+.card .content button{
+  width: 50%;
+  height: 45px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #000;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card .content button:hover{
+  background-color: #E7D3D4;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .card{
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .card img{
+    display: none;
+  }
+  .card .content{
+    width: 90%;
+    border-radius: 15px;
+  }
+  .card .content h1{
+    font-size: 24px;
+  }
+  .card .content h2{
+    font-size: 20px;
+  }
+  
+}
