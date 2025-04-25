@@ -114,14 +114,15 @@ body{
 @media screen and (max-width: 768px) {
   .card{
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     height: auto;
+    box-shadow:  1px 5px 3px rgba(0, 0, 0, 0.1);
   }
   .card img{
     display: none;
   }
   .card .content{
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
   }
   .card .content h1{
